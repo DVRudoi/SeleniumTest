@@ -10,7 +10,7 @@ public class MainTest {
     public void testFirstSelenium() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","D:/NEW/chromedriver_win32/chromedriver.exe");
 
-        WebDriver driver = new ChromeDriver(); //создаем объект типа ChromeDriver, сохраняем в переменную типа WebDriver
+        WebDriver driver = new ChromeDriver(); //создаем объект типа ChromeDriver, сохраняем в переменную типа WebDriver с именем driver
 
         driver.get("https://google.com"); // ссылка
 
