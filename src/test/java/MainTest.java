@@ -16,7 +16,7 @@ public class MainTest {
 
 
         WebElement searchBox = driver.findElement(By.name("q"));//метод ( наз searchBox) который ищет q - html
-        WebElement searchButton = driver.findElement(By.name("btnK"));
+        WebElement searchButton = driver.findElement(By.name("btnK"));// ищет кнопку поиска
 
         searchBox.sendKeys("Selenium");//печатаем внутри (q) Selenium
 
@@ -25,8 +25,8 @@ public class MainTest {
         searchButton.click();// нажимаем кнопку по адресу btnK - html
 
         searchBox = driver.findElement(By.name("q")); // опять ищем элемент q на странице
-        Assert.assertEquals(searchBox.getAttribute("value"),"Selenium"); // проверяем => "Selenium"
-
-        driver.quit();
+//        Assert.assertEquals(searchBox.getAttribute("value"),"Selenium"); // проверяем => "Selenium"
+//
+//        driver.quit();
     }
 }
